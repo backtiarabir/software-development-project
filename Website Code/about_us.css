@@ -1,0 +1,118 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Headers */
+h2, h3 {
+    color: #FF8C44;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Company Info Section */
+.company-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Vision and Mission */
+.vision, .mission {
+    margin-bottom: 30px;
+}
+
+.vision p, .mission p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Values Section */
+.values ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.values li {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.values li strong {
+    color: #FF8C44;
+}
+
+/* Founders' Profiles */
+.owners {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.owner-profile {
+    width: 45%;
+    text-align: center;
+}
+
+.owner-profile img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.owner-profile p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 20px;
+    }
+
+    .owners {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .owner-profile {
+        width: 80%;
+    }
+
+    .vision, .mission {
+        text-align: center;
+    }
+}
